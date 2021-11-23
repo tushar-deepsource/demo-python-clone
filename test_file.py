@@ -1,10 +1,10 @@
 from .utils import get_file_names 
 
-file_names = get_file_names()
-for file_name in file_names:
-    if file_name.endswith('.py'):
-        print('Python file found!')
-        break
-else:
-    print('No Python file found :(')
+files = get_file_names()
+    for file in files:
+        if file.endswith('.py'):
+            python_file_found = True
+            break
+    else:
+        python_file_found = False
 
